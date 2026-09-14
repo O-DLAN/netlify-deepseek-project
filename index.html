@@ -3,3 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samtalskort – Rymdversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- RYMDSTJÄRNOR -->
+    <div class="stars"></div>
+
+    <div class="container">
+
+        <!-- KORTET -->
+        <div class="card">
+            <h2 id="card-text">Är du redo att spela?</h2>
+        </div>
+
+        <!-- ANVÄNDARSVAR -->
+        <div class="answer-box">
+            <label for="user-answer">Ditt svar:</label>
+            <textarea id="user-answer" rows="4" placeholder="Skriv ditt svar här..."></textarea>
+            <button id="send-answer">Skicka till AI</button>
+        </div>
+
+        <!-- AI-SVAR -->
+        <div class="ai-response">
+            <h3>AI:s respons:</h3>
+            <p id="ai-response">Inget svar ännu...</p>
+        </div>
+
+        <!-- NÄSTA KORT -->
+        <div class="next-card">
+            <button id="next-card-btn">➡️ Nästa kort</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

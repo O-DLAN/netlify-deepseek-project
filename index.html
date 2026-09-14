@@ -65,4 +65,69 @@
             animation: textPulse 4s ease-in-out infinite;
         }
 
-       
+        @keyframes textPulse {
+            0% { text-shadow: 0 0 10px #00aaff; }
+            50% { text-shadow: 0 0 25px #33ccff; }
+            100% { text-shadow: 0 0 10px #00aaff; }
+        }
+
+        .card-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .card-list li {
+            margin: 6px 0;
+            font-size: 18px;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        #next-card {
+            margin-top: 15px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background: #00aaff;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 20px #00aaff;
+            transition: 0.2s;
+        }
+
+        #next-card:hover {
+            background: #33ccff;
+            box-shadow: 0 0 30px #33ccff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nebula"></div>
+    <div class="stars"></div>
+
+    <div class="container">
+
+        <div class="card">
+            <div id="card-text"></div>
+            <button id="next-card">Nästa kort</button>
+        </div>
+
+        <div class="card">
+            <p>Det här är några av våra samlingskort:</p>
+            <ul class="card-list">
+                <li>Gotland</li>
+                <li>Hospitality</li>
+                <li>mm</li>
+                <li>Aa</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

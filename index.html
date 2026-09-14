@@ -6,23 +6,26 @@
     <title>Ord & Omtanke – Space Glow</title>
 
     <style>
+        /* SPACE GLOW – RYMD MED LUGN FÄRGSKIFTNING */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Orbitron', sans-serif;
             background: radial-gradient(circle at center, #0a0a1a, #000000);
             color: white;
-            overflow-x: hidden;
-            text-align: center;
+            overflow: hidden;
             animation: spaceGlow 20s ease-in-out infinite;
+            text-align: center;
         }
 
+        /* Mjuk färgskiftning i bakgrunden */
         @keyframes spaceGlow {
             0% { background: radial-gradient(circle at center, #0a0a1a, #000000); }
             50% { background: radial-gradient(circle at center, #12001f, #000000); }
             100% { background: radial-gradient(circle at center, #0a0a1a, #000000); }
         }
 
+        /* STILLASTÅENDE STJÄRNOR */
         .stars {
             position: fixed;
             width: 100%;
@@ -35,6 +38,7 @@
             z-index: -1;
         }
 
+        /* NEBULOSA */
         .nebula {
             position: fixed;
             width: 100%;
@@ -44,7 +48,37 @@
             z-index: -2;
         }
 
-        /* ⭐ Rubrik överst */
+        /* ❤️ KORTLEK-SKUGGA NERE TILL HÖGER */
+        .card-deck-shadow {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(
+                circle at center,
+                rgba(255, 0, 100, 0.25),
+                rgba(255, 0, 100, 0.05),
+                transparent 70%
+            );
+            border-radius: 20px;
+            transform: rotate(12deg);
+            filter: blur(25px);
+            opacity: 0.55;
+            z-index: -1;
+        }
+
+        .card-deck-shadow::before {
+            content: "♥";
+            position: absolute;
+            font-size: 140px;
+            color: rgba(255, 0, 120, 0.25);
+            top: 10px;
+            left: 20px;
+            filter: blur(8px);
+        }
+
+        /* RUBRIK ÖVERST */
         h1 {
             margin-top: 30px;
             font-size: 32px;
@@ -52,12 +86,14 @@
             animation: textPulse 4s ease-in-out infinite;
         }
 
+        /* CONTAINER */
         .container {
-            max-width: 650px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
         }
 
+        /* KORTET */
         .card {
             background: rgba(255, 255, 255, 0.05);
             padding: 30px;
@@ -67,6 +103,7 @@
             margin-bottom: 30px;
         }
 
+        /* TEXT MED PULSERANDE GLOW */
         #card-text {
             font-size: 28px;
             text-shadow: 0 0 15px #00aaff;
@@ -79,6 +116,7 @@
             100% { text-shadow: 0 0 10px #00aaff; }
         }
 
+        /* SAMLINGSKORT-LISTA */
         .card-list {
             list-style: none;
             padding: 0;
@@ -91,6 +129,7 @@
             text-shadow: 0 0 10px #ff00ff;
         }
 
+        /* KNAPP */
         #next-card {
             margin-top: 15px;
             padding: 12px 20px;
@@ -115,6 +154,7 @@
 
     <div class="nebula"></div>
     <div class="stars"></div>
+    <div class="card-deck-shadow"></div>
 
     <!-- ⭐ Rubrik som alltid syns -->
     <h1>Välkommen till Ord & Omtanke</h1>

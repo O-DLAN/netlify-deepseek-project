@@ -40,55 +40,72 @@ body {
     z-index: -2;
 }
 
-/* 💚 TYDLIGARE KORTLEK NERE TILL HÖGER – GRÖN VERSION */
-.card-deck-shadow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 160px;
-    height: 200px;
-    z-index: -1;
-    opacity: 0.55;
+/* RUBRIK ÖVERST */
+h1 {
+    margin-top: 30px;
+    font-size: 32px;
+    text-shadow: 0 0 20px #00aaff;
+    animation: textPulse 4s ease-in-out infinite;
 }
 
-/* Bakre kort – grön glow */
-.card-deck-shadow .card1,
-.card-deck-shadow .card2,
-.card-deck-shadow .card3 {
-    position: absolute;
-    width: 120px;
-    height: 160px;
-    background: rgba(0, 255, 180, 0.08); /* grön/turkos ton */
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0, 255, 180, 0.25); /* grön glow */
-    filter: blur(3px);
+/* CONTAINER */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
 }
 
-/* Tre kort i en liten spridning */
-.card-deck-shadow .card1 {
-    transform: rotate(-8deg);
-    top: 20px;
-    left: 10px;
+/* KORTET */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 35px rgba(0, 150, 255, 0.7);
+    margin-bottom: 30px;
 }
 
-.card-deck-shadow .card2 {
-    transform: rotate(4deg);
-    top: 10px;
-    left: 25px;
+/* TEXT MED PULSERANDE GLOW */
+#card-text {
+    font-size: 28px;
+    text-shadow: 0 0 15px #00aaff;
+    animation: textPulse 4s ease-in-out infinite;
 }
 
-.card-deck-shadow .card3 {
-    transform: rotate(12deg);
-    top: 0px;
-    left: 40px;
+@keyframes textPulse {
+    0% { text-shadow: 0 0 10px #00aaff; }
+    50% { text-shadow: 0 0 25px #33ccff; }
+    100% { text-shadow: 0 0 10px #00aaff; }
 }
 
-/* 💚 Grönt hjärta på främre kortet */
-.card-deck-shadow .card3::before {
-    content: "♥";
-    position: absolute;
-    font-size: 90px;
-    color: rgba(0, 255, 180, 0.45); /* grön/turkos hjärta */
-    top: 25px;
-    left: 25px;
-   
+/* SAMLINGSKORT-LISTA */
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.card-list li {
+    margin: 6px 0;
+    font-size: 18px;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* KNAPP */
+#next-card {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00aaff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00aaff;
+    transition: 0.2s;
+}
+
+#next-card:hover {
+    background: #33ccff;
+    box-shadow: 0 0 30px #33ccff;
+}

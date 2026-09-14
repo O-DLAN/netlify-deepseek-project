@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ord & Omtanke – Premium Pastell Glow</title>
+    <title>Ord & Omtanke – Premium Calm Studio</title>
 
+    <!-- Kopplar till din style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Bakgrundselement -->
     <div class="nebula"></div>
     <div class="stars"></div>
 
-    <!-- ⭐ Rubrik som alltid syns -->
-    <h1>Välkommen till Ord & Omtanke</h1>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="title">Ord & Omtanke</h1>
+        <p class="subtitle">En mjukare, varmare och mer minnesvärd upplevelse</p>
+    </header>
 
-    <div class="container">
+    <!-- Main content -->
+    <main class="container">
 
-        <div class="card">
-            <div id="card-text">Hej och välkommen till Ord & Omtanke!</div>
-            <button id="next-card">Nästa</button>
-        </div>
+        <!-- Intro card -->
+        <section class="card">
+            <h2 class="section-title">Välkommen</h2>
+            <p class="intro-text">
+                Hej och välkommen till Ord & Omtanke — en plats där stillhet, värme och omtanke får ta plats.
+            </p>
+            <button id="next-card" class="button">Nästa</button>
+        </section>
 
-        <div class="card">
-            <p>Det här är några av våra samlingskort:</p>
+        <!-- Samlingskort -->
+        <section class="card">
+            <h2 class="section-title">Samlingskort</h2>
             <ul class="card-list">
                 <li>Gotland</li>
                 <li>Hospitality</li>
                 <li>mm</li>
                 <li>Aa</li>
             </ul>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
+    <!-- Script -->
     <script src="script.js"></script>
 
 </body>

@@ -31,7 +31,7 @@ body {
 /* ====== HEADER / HERO ====== */
 .header {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 120px 20px 40px; /* extra luft för hjärtat */
 }
 
 .title {
@@ -146,7 +146,7 @@ body {
 /* ====== HJÄRTA HÖGST UPP ====== */
 .heart {
     position: absolute;
-    top: 25px;
+    top: -20px; /* flyttat upp så det inte täcker text */
     left: 50%;
     transform: translateX(-50%) rotate(-45deg);
     width: 60px;

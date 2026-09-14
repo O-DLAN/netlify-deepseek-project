@@ -1,10 +1,10 @@
-/* SPACE GLOW – RYMD MED LUGN FÄRGSKIFTNING */
+/* MODERN PASTELLGLOW – LUGNA PREMIUMTONER */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    background: radial-gradient(circle at center, #0a0a1a, #000000);
-    color: white;
+    background: radial-gradient(circle at center, #dfe7e2, #cfd8d3); /* salviagrön + ljusgrå */
+    color: #1a1a1a; /* mörkgrå text */
     overflow: hidden;
     animation: spaceGlow 20s ease-in-out infinite;
     text-align: center;
@@ -12,30 +12,30 @@ body {
 
 /* Mjuk färgskiftning i bakgrunden */
 @keyframes spaceGlow {
-    0% { background: radial-gradient(circle at center, #0a0a1a, #000000); }
-    50% { background: radial-gradient(circle at center, #12001f, #000000); }
-    100% { background: radial-gradient(circle at center, #0a0a1a, #000000); }
+    0% { background: radial-gradient(circle at center, #dfe7e2, #cfd8d3); }
+    50% { background: radial-gradient(circle at center, #f4e7e9, #e8dcd9); } /* ljus rosa + ljus beige */
+    100% { background: radial-gradient(circle at center, #dfe7e2, #cfd8d3); }
 }
 
-/* STILLASTÅENDE STJÄRNOR */
+/* STILLASTÅENDE MJUKA STJÄRNOR */
 .stars {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: radial-gradient(white 1px, transparent 1px) repeat;
+    background: radial-gradient(#ffffff 1px, transparent 1px) repeat;
     background-size: 3px 3px;
-    opacity: 0.18;
+    opacity: 0.12;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
-/* NEBULOSA */
+/* NEBULOSA – MJUK PASTELL */
 .nebula {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 40%, rgba(120, 0, 255, 0.25), transparent 60%);
+    background: radial-gradient(circle at 50% 40%, rgba(200, 230, 220, 0.4), transparent 60%);
     filter: blur(80px);
     z-index: -2;
 }
@@ -44,7 +44,8 @@ body {
 h1 {
     margin-top: 30px;
     font-size: 32px;
-    text-shadow: 0 0 20px #00aaff;
+    color: #1a1a1a;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
     animation: textPulse 4s ease-in-out infinite;
 }
 
@@ -57,25 +58,26 @@ h1 {
 
 /* KORTET */
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.4); /* vit transparent */
     padding: 30px;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 35px rgba(0, 150, 255, 0.7);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 35px rgba(200, 220, 210, 0.6); /* salvia glow */
     margin-bottom: 30px;
 }
 
-/* TEXT MED PULSERANDE GLOW */
+/* TEXT MED MJUK PULS */
 #card-text {
     font-size: 28px;
-    text-shadow: 0 0 15px #00aaff;
+    color: #1a1a1a;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     animation: textPulse 4s ease-in-out infinite;
 }
 
 @keyframes textPulse {
-    0% { text-shadow: 0 0 10px #00aaff; }
-    50% { text-shadow: 0 0 25px #33ccff; }
-    100% { text-shadow: 0 0 10px #00aaff; }
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
+    50% { text-shadow: 0 0 25px rgba(255, 255, 255, 0.9); }
+    100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); }
 }
 
 /* SAMLINGSKORT-LISTA */
@@ -88,7 +90,8 @@ h1 {
 .card-list li {
     margin: 6px 0;
     font-size: 18px;
-    text-shadow: 0 0 10px #ff00ff;
+    color: #333;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 /* KNAPP */
@@ -97,15 +100,15 @@ h1 {
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
-    background: #00aaff;
-    color: black;
+    background: #e8f3ec; /* ljus salviagrön */
+    color: #1a1a1a;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 20px #00aaff;
+    box-shadow: 0 0 20px rgba(200, 220, 210, 0.7);
     transition: 0.2s;
 }
 
 #next-card:hover {
-    background: #33ccff;
-    box-shadow: 0 0 30px #33ccff;
+    background: #f7e9ef; /* ljus rosa */
+    box-shadow: 0 0 30px rgba(240, 210, 220, 0.8);
 }

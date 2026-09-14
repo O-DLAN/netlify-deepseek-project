@@ -8,67 +8,41 @@ body {
     overflow-x: hidden;
 }
 
-/* ====== TOP BANNER ====== */
-.top-banner {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/* Terracotta linjer */
-.banner-line {
-    height: 2px;
-    background: #C97A63;
-    width: 100%;
-    margin: 10px 0;
-}
-
-/* Terracotta titel */
-.banner-title {
-    font-size: 22px;
-    font-weight: 600;
-    color: #C97A63;
-    letter-spacing: 2px;
-    margin: 10px 0;
-}
-
-/* Terracotta hjärta */
-.banner-heart {
-    width: 70px;
-    height: 70px;
-    background: #C97A63;
-    margin: 20px auto;
+/* ====== GRÖNT LOGO-HJÄRTA MED TEXT ====== */
+.logo-heart {
+    width: 130px;
+    height: 115px;
+    background: #0f4c5c; /* mörk grön/teal */
+    border-radius: 60% 60% 55% 55% / 65% 65% 45% 45%;
     position: relative;
-    transform: rotate(-45deg);
-    border-radius: 50% 50% 0 0;
+    margin: 30px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f2ee; /* ljus beige text */
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
 }
 
-.banner-heart::before,
-.banner-heart::after {
+/* pratbubblans lilla "svans" */
+.logo-heart::after {
     content: "";
     position: absolute;
-    width: 70px;
-    height: 70px;
-    background: #C97A63;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%) rotate(15deg);
+    width: 36px;
+    height: 36px;
+    background: #0f4c5c;
     border-radius: 50%;
 }
 
-.banner-heart::before {
-    top: -35px;
-    left: 0;
-}
-
-.banner-heart::after {
-    top: 0;
-    left: 35px;
-}
-
-/* Terracotta mail */
-.banner-mail {
-    font-size: 14px;
-    color: #C97A63;
-    margin-top: 10px;
-    letter-spacing: 1px;
+/* Texten i hjärtat */
+.heart-text {
+    position: relative;
+    z-index: 2;
 }
 
 /* ====== BAKGRUND ====== */

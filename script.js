@@ -1,15 +1,12 @@
 // Alla kort (lägg till fler här)
 const cards = [
     {
-        image: "card1.jpg",
         text: "Är du redo att spela spelet?"
     },
     {
-        image: "card2.jpg",
         text: "Vad gör dig glad just nu?"
     },
     {
-        image: "card3.jpg",
         text: "När känner du dig som mest trygg?"
     }
 ];
@@ -19,7 +16,6 @@ let currentIndex = 0;
 // Visa kort
 function showCard(index) {
     const card = cards[index];
-    document.getElementById("card-image").src = card.image;
     document.getElementById("card-text").innerText = card.text;
 
     // Töm tidigare svar
@@ -39,7 +35,7 @@ document.getElementById("send-answer").addEventListener("click", async () => {
         return;
     }
 
-    const response = await fetch("/.netlify/functions/api", {
+    const response = await fetch("/.netlify/functions/deepseek", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

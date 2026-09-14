@@ -1,4 +1,4 @@
-/* RYMD-BAKGRUND UTAN BILDER */
+/* STILLASTÅENDE RYMD-BAKGRUND UTAN ANIMATION */
 body {
     margin: 0;
     padding: 0;
@@ -8,100 +8,16 @@ body {
     overflow: hidden;
 }
 
-/* ANIMERADE STJÄRNOR */
+/* STJÄRNOR – STILLASTÅENDE */
 .stars {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background:
+        radial-gradient(white 1px, transparent 1px) repeat;
+    background-size: 3px 3px;
+    opacity: 0.25;
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.stars::before, .stars::after {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(white 1px, transparent 1px) repeat;
-    background-size: 3px 3px;
-    animation: drift 60s linear infinite;
-    opacity: 0.4;
-}
-
-.stars::after {
-    animation-duration: 120s;
-    opacity: 0.2;
-}
-
-@keyframes drift {
-    from { transform: translate(0, 0); }
-    to { transform: translate(-500px, -500px); }
-}
-
-/* CONTAINER */
-.container {
-    max-width: 600px;
-    margin: 40px auto;
-    text-align: center;
-}
-
-/* KORTET */
-.card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 25px rgba(0, 150, 255, 0.6);
-    margin-bottom: 30px;
-}
-
-/* TEXT */
-#card-text {
-    font-size: 28px;
-    text-shadow: 0 0 10px #00aaff;
-}
-
-/* SVARSRUTA */
-.answer-box textarea {
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px;
-    background: rgba(255,255,255,0.1);
-    color: white;
-    border: 1px solid #00aaff;
-    resize: none;
-}
-
-/* KNAPPAR */
-button {
-    margin-top: 15px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px;
-    background: #00aaff;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 0 15px #00aaff;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #33ccff;
-    box-shadow: 0 0 25px #33ccff;
-}
-
-/* AI-SVAR */
-.ai-response {
-    margin-top: 30px;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 0, 200, 0.5);
-}
-
-.ai-response h3 {
-    text-shadow: 0 0 10px #ff00ff;
 }

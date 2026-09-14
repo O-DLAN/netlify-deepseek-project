@@ -1,85 +1,114 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ord&Omtanke – Kortlekar för samtal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ord & Omtanke</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", sans-serif;
+            background: #f7f4ef;
+            color: #3a3a3a;
+            text-align: center;
+        }
+
+        /* Hjärtformad pratbubbla */
+        .heart-bubble {
+            position: relative;
+            display: inline-block;
+            margin-top: 40px;
+            padding: 22px 34px;
+            background: #0F5C5C; /* mörk teal */
+            color: #F5E7D0; /* beige text */
+            font-size: 26px;
+            font-weight: 600;
+            border-radius: 50px 50px 40px 40px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        /* Hjärtformad topp */
+        .heart-bubble::before,
+        .heart-bubble::after {
+            content: "";
+            position: absolute;
+            top: -26px;
+            width: 48px;
+            height: 48px;
+            background: #0F5C5C;
+            border-radius: 50%;
+        }
+
+        .heart-bubble::before {
+            left: 22px;
+        }
+
+        .heart-bubble::after {
+            right: 22px;
+        }
+
+        /* Pratbubblans svans */
+        .heart-bubble-tail {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 26px;
+            height: 26px;
+            background: #0F5C5C;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+
+        h1 {
+            margin-top: 80px;
+            font-size: 42px;
+            color: #9b4f3f;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20px auto;
+            max-width: 320px;
+        }
+
+        .section {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            max-width: 360px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- TOP BANNER / LOGO-HJÄRTA -->
-    <div class="logo-heart">
-        <span class="heart-text">Ord & Omtanke</span>
+    <!-- Hjärtformad pratbubbla -->
+    <div class="heart-bubble">
+        Ord & Omtanke
+        <div class="heart-bubble-tail"></div>
     </div>
 
-    <!-- Bakgrundselement -->
-    <div class="nebula"></div>
-    <div class="stars"></div>
+    <h1>Ord&Omtanke</h1>
+    <p>Kortlekar för samtal och upplevelser som stannar kvar</p>
 
-    <!-- HERO / HEADER -->
-    <header class="header">
-        <h1 class="title">Ord&Omtanke</h1>
-        <p class="subtitle">Kortlekar för samtal och upplevelser som stannar kvar</p>
-    </header>
-
-    <!-- HERO-BILD -->
-    <section class="hero-image">
-        <!-- <img src="dinbild.jpg" alt="Kortlekar"> -->
-    </section>
-
-    <main class="container">
-
-        <!-- Om oss -->
-        <section class="card">
-            <h2 class="section-title">Om oss</h2>
-            <p class="intro-text">
-                Ord&Omtanke är skapat för att göra samtal enklare.
-                Korten används av privatpersoner, företag, restauranger, skolor och föreningar
-                och är uppdelade i portföljer för olika ändamål.
-                Varje kortlek har ett tydligt tema och är utformad för att skapa värme, trygghet
-                och riktiga möte, oavsett om det är runt middagsbordet, i ett mötesrum eller
-                i en grupp som vill lära känna varandra bättre.
-            </p>
-        </section>
-
-        <!-- Var kortlekarna säljs -->
-        <section class="card">
-            <h2 class="section-title">Var kortlekarna säljs</h2>
-            <p class="intro-text">
-                Just nu säljer vi kortlekarna via sociala medier, framför allt Instagram,
-                samt genom direktkontakt. Den här webbsidan blir den första riktiga platsen
-                där du kan upptäcka kortlekarna, läsa mer om dem och snart även köpa dem direkt.
-            </p>
-        </section>
-
-        <!-- Kortlekar -->
-        <section class="card">
-            <h2 class="section-title">Kortlekar</h2>
-            <p class="intro-text">Här kommer bilder och presentation av kortlekarna.</p>
-
-            <div class="gallery">
-                <!-- <img src="kortlek1.jpg" alt="Kortlek 1"> -->
-                <!-- <img src="kortlek2.jpg" alt="Kortlek 2"> -->
-            </div>
-        </section>
-
-        <!-- Kontakt -->
-        <section class="card">
-            <h2 class="section-title">Nå oss</h2>
-            <p class="intro-text">
-                Vill du beställa en kortlek eller göra en förfrågan?
-                Du kan nå oss via Instagram eller e‑post.
-            </p>
-
-            <button class="button">Skicka förfrågan</button>
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
+    <div class="section">
+        <h2>Om oss</h2>
+        <p>
+            Ord&Omtanke är skapat för att inspirera till djupa samtal,
+            värme och upplevelser som stannar kvar.
+        </p>
+    </div>
 
 </body>
 </html>

@@ -1,5 +1,3 @@
-// netlify/functions/deepseek.js
-
 exports.handler = async function(event, context) {
   try {
     const body = JSON.parse(event.body || "{}");

@@ -28,7 +28,7 @@ body {
     z-index: -1;
 }
 
-/* ====== HEADER ====== */
+/* ====== HEADER / HERO ====== */
 .header {
     text-align: center;
     padding: 60px 20px 40px;
@@ -37,14 +37,28 @@ body {
 .title {
     font-size: 42px;
     font-weight: 600;
-    color: #C97A63; /* terracotta */
+    color: #C97A63; /* terracotta accent */
     letter-spacing: -0.5px;
 }
 
 .subtitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #6a6a6a;
     margin-top: 10px;
+}
+
+/* Hero-bildsektion (du lägger in bild senare) */
+.hero-image {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* ====== MAIN CONTAINER ====== */
@@ -76,6 +90,19 @@ body {
     line-height: 1.6;
     color: #4a4a4a;
     margin-bottom: 25px;
+}
+
+/* ====== GALLERI ====== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: calc(50% - 10px);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 /* ====== BUTTON ====== */

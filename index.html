@@ -6,40 +6,6 @@
     <title>Ord&Omtanke – Kortlekar för samtal</title>
 
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* ====== HJÄRTA ====== */
-        .heart-shape {
-            position: absolute;
-            top: 25px;
-            left: 50%;
-            transform: translateX(-50%) rotate(-45deg);
-            width: 60px;
-            height: 60px;
-            background-color: #C97A63;
-            border-radius: 50% 50% 0 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .heart-shape::before,
-        .heart-shape::after {
-            content: "";
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            background-color: #C97A63;
-            border-radius: 50%;
-        }
-
-        .heart-shape::before {
-            top: 0;
-            left: 60px;
-        }
-
-        .heart-shape::after {
-            top: 60px;
-            left: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -49,7 +15,7 @@
     <div class="stars"></div>
 
     <!-- HJÄRTA -->
-    <div class="heart-shape"></div>
+    <div class="heart"></div>
 
     <!-- HERO / HEADER -->
     <header class="header">
@@ -73,45 +39,4 @@
                 och är uppdelade i portföljer för olika ändamål.
                 Varje kortlek har ett tydligt tema och är utformad för att skapa värme, trygghet
                 och riktiga möte, oavsett om det är runt middagsbordet, i ett mötesrum eller
-                i en grupp som vill lära känna varandra bättre.
-            </p>
-        </section>
-
-        <!-- Var kortlekarna säljs -->
-        <section class="card">
-            <h2 class="section-title">Var kortlekarna säljs</h2>
-            <p class="intro-text">
-                Just nu säljer vi kortlekarna via sociala medier, framför allt Instagram,
-                samt genom direktkontakt. Den här webbsidan blir den första riktiga platsen
-                där du kan upptäcka kortlekarna, läsa mer om dem och snart även köpa dem direkt.
-            </p>
-        </section>
-
-        <!-- Kortlekar -->
-        <section class="card">
-            <h2 class="section-title">Kortlekar</h2>
-            <p class="intro-text">Här kommer bilder och presentation av kortlekarna.</p>
-
-            <div class="gallery">
-                <!-- <img src="kortlek1.jpg" alt="Kortlek 1"> -->
-                <!-- <img src="kortlek2.jpg" alt="Kortlek 2"> -->
-            </div>
-        </section>
-
-        <!-- Kontakt -->
-        <section class="card">
-            <h2 class="section-title">Nå oss</h2>
-            <p class="intro-text">
-                Vill du beställa en kortlek eller göra en förfrågan?
-                Du kan nå oss via Instagram eller e‑post.
-            </p>
-
-            <button class="button">Skicka förfrågan</button>
-        </section>
-
-    </main>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+                i en grupp som vill

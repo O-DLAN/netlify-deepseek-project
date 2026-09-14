@@ -6,6 +6,40 @@
     <title>Ord&Omtanke – Kortlekar för samtal</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* ====== HJÄRTA ====== */
+        .heart-shape {
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+            width: 60px;
+            height: 60px;
+            background-color: #C97A63;
+            border-radius: 50% 50% 0 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .heart-shape::before,
+        .heart-shape::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: #C97A63;
+            border-radius: 50%;
+        }
+
+        .heart-shape::before {
+            top: 0;
+            left: 60px;
+        }
+
+        .heart-shape::after {
+            top: 60px;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,6 +47,9 @@
     <!-- Bakgrundselement -->
     <div class="nebula"></div>
     <div class="stars"></div>
+
+    <!-- HJÄRTA -->
+    <div class="heart-shape"></div>
 
     <!-- HERO / HEADER -->
     <header class="header">

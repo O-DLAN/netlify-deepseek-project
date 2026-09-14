@@ -48,57 +48,6 @@
             z-index: -2;
         }
 
-        /* 💚 TYDLIGARE KORTLEK NERE TILL HÖGER – GRÖN VERSION */
-        .card-deck-shadow {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 160px;
-            height: 200px;
-            z-index: -1;
-            opacity: 0.55;
-        }
-
-        .card-deck-shadow .card1,
-        .card-deck-shadow .card2,
-        .card-deck-shadow .card3 {
-            position: absolute;
-            width: 120px;
-            height: 160px;
-            background: rgba(0, 255, 180, 0.08);
-            border-radius: 12px;
-            box-shadow: 0 0 25px rgba(0, 255, 180, 0.25);
-            filter: blur(3px);
-        }
-
-        .card-deck-shadow .card1 {
-            transform: rotate(-8deg);
-            top: 20px;
-            left: 10px;
-        }
-
-        .card-deck-shadow .card2 {
-            transform: rotate(4deg);
-            top: 10px;
-            left: 25px;
-        }
-
-        .card-deck-shadow .card3 {
-            transform: rotate(12deg);
-            top: 0px;
-            left: 40px;
-        }
-
-        .card-deck-shadow .card3::before {
-            content: "♥";
-            position: absolute;
-            font-size: 90px;
-            color: rgba(0, 255, 180, 0.45);
-            top: 25px;
-            left: 25px;
-            text-shadow: 0 0 25px rgba(0, 255, 180, 0.7);
-        }
-
         /* RUBRIK ÖVERST */
         h1 {
             margin-top: 30px;
@@ -175,13 +124,6 @@
 
     <div class="nebula"></div>
     <div class="stars"></div>
-
-    <!-- 💚 Kortlek nere till höger -->
-    <div class="card-deck-shadow">
-        <div class="card1"></div>
-        <div class="card2"></div>
-        <div class="card3"></div>
-    </div>
 
     <!-- ⭐ Rubrik som alltid syns -->
     <h1>Välkommen till Ord & Omtanke</h1>

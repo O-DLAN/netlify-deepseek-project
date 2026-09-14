@@ -37,7 +37,7 @@ body {
 .title {
     font-size: 42px;
     font-weight: 600;
-    color: #3a3a3a;
+    color: #C97A63; /* terracotta */
     letter-spacing: -0.5px;
 }
 
@@ -82,8 +82,8 @@ body {
 .button,
 #next-card {
     padding: 14px 22px;
-    background: #e7efe9; /* ljus salviagrön */
-    color: #2e2e2e;
+    background: #C97A63; /* terracotta */
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     font-weight: 600;
@@ -94,7 +94,7 @@ body {
 
 .button:hover,
 #next-card:hover {
-    background: #f3e7e9; /* ljus rosa */
+    background: #b86c58; /* mörkare terracotta vid hover */
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
 }
 

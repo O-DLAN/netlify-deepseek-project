@@ -8,67 +8,14 @@ body {
     overflow-x: hidden;
 }
 
-/* ====== TOP BANNER ====== */
-.top-banner {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-/* Terracotta linjer */
-.banner-line {
-    height: 2px;
-    background: #C97A63;
+/* ====== TOP IMAGE ====== */
+.top-image {
     width: 100%;
-    margin: 10px 0;
-}
-
-/* Terracotta titel */
-.banner-title {
-    font-size: 22px;
-    font-weight: 600;
-    color: #C97A63;
-    letter-spacing: 2px;
-    margin: 10px 0;
-}
-
-/* Terracotta hjärta */
-.banner-heart {
-    width: 70px;
-    height: 70px;
-    background: #C97A63;
-    margin: 20px auto;
-    position: relative;
-    transform: rotate(-45deg);
-    border-radius: 50% 50% 0 0;
-}
-
-.banner-heart::before,
-.banner-heart::after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    background: #C97A63;
-    border-radius: 50%;
-}
-
-.banner-heart::before {
-    top: -35px;
-    left: 0;
-}
-
-.banner-heart::after {
-    top: 0;
-    left: 35px;
-}
-
-/* Terracotta mail */
-.banner-mail {
-    font-size: 14px;
-    color: #C97A63;
-    margin-top: 10px;
-    letter-spacing: 1px;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #C97A63; /* terracotta accent */
 }
 
 /* ====== BAKGRUND ====== */
@@ -94,7 +41,7 @@ body {
 /* ====== HEADER / HERO ====== */
 .header {
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 40px 20px 30px;
 }
 
 .title {
@@ -110,7 +57,7 @@ body {
     margin-top: 10px;
 }
 
-/* ====== HERO-BILD ====== */
+/* ====== HERO-BILD (tom sektion) ====== */
 .hero-image {
     width: 100%;
     max-width: 900px;

@@ -68,7 +68,7 @@ body {
     padding: 20px;
 }
 
-/* ====== CARD ====== */
+/* ====== CARD (standardruta) ====== */
 .card {
     background: #ffffff;
     border-radius: 18px;
@@ -143,12 +143,14 @@ body {
     border-bottom: none;
 }
 
-/* ====== BILD LÄNGST NER ====== */
-.bottom-image {
+/* ====== BILD-KORT (snygg ruta för bilden) ====== */
+.image-card {
+    padding: 0; /* ingen text, så vi tar bort padding */
+}
+
+.card-image {
     width: 100%;
-    max-height: 320px;
-    object-fit: cover;
+    border-radius: 18px;
     display: block;
-    margin-top: 40px;
-    border-top: 4px solid #C97A63; /* terracotta accent */
+    object-fit: cover;
 }

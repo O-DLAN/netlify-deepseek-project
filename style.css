@@ -142,15 +142,3 @@ body {
 .card-list li:last-child {
     border-bottom: none;
 }
-
-/* ====== BILD-KORT (snygg ruta för bilden) ====== */
-.image-card {
-    padding: 0; /* ingen text, så vi tar bort padding */
-}
-
-.card-image {
-    width: 100%;
-    border-radius: 18px;
-    display: block;
-    object-fit: cover;
-}
